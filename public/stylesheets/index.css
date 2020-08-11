@@ -1,0 +1,580 @@
+/****BODY DEFAULT*****/
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Tajawal', sans-serif;
+	font-weight: 300;
+	background: black;
+	color:white;
+	font-size: 1.5rem;
+	position: relative;
+	z-index:1;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/**********************/
+/*    TEXT SPACERS    */
+/**********************/
+
+.nopadding{
+	padding:0;
+}
+
+.spacer-c{
+	padding-top:3rem;
+}
+
+.spacer-d{
+	padding-top:1.5rem;
+}
+
+/*needed for navbar to display properly*/
+.navbar-fixer{
+	margin-top:8.7rem;
+}
+
+/*this must be included for anchors to work correctly*/
+.anchor{
+	scroll-margin-top: 8.7rem;
+	z-index = -30;
+}
+/***************************/
+/*HEADERS AND FONT TYPES    /
+/***************************/
+
+/*just being used for email me in top right and motto */
+.rale{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*navbar font*/
+.navbar-info{
+	font-weight:300;
+	font-size:.8rem;
+}
+
+/*this is used for links in classes*/
+.example{
+	font-size: 1.20rem;
+	/*text-align: left;*/
+	font-family: 'Raleway', sans-serif;
+	color: white
+} 
+
+h3{
+	font-size: 1.20rem;
+	/*text-align: left;*/
+	font-family: 'Raleway', sans-serif;
+}
+
+h4{
+	font-size: 1.2rem;
+	/*text-align: center;*/
+}
+
+/*used for for brand label*/
+h5{
+	font-size: 0.9rem;
+}
+
+/*quote is used within the carousel text*/
+.quote{
+	/*margin-top: 3rem;*/
+	/*text-align:center;*/
+	font-size: .8rem;
+	/*margin-bottom: 6rem;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*used for the majority of the fonts on the page */
+.my-font{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing:.05rem;
+
+}
+
+/*used for all title fonts*/
+.title{
+	font-size: 2.5rem;
+}
+
+/******************/
+/*   ANIMATIONS   */
+/******************/
+
+/*fades in on start*/
+@keyframes fadeInAnimation {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+.fade-in-animation{
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/************************/
+/*  BACKGROUND COLORS   */
+/************************/
+.gray-background{
+	background: #191919;
+}
+
+.black-background{
+	background: black;
+}
+
+.wlight-background{
+	background:  #E3E9EA;
+	color: black;
+	height:100%;
+	width:100%;
+
+}
+
+/*******************/
+/*     TESTING     */
+/*******************/
+
+/*these are used to visualize containers and dividers when uncommented*/
+
+/*
+div{
+	border:purple solid 1px;
+}
+
+.container{
+	border: green 1px solid;
+}
+*/
+
+/******************************/
+/*     LABEL AND NAV          */
+/******************************/
+
+/*fixes position of label and nav*/
+.wfixed{
+	position:fixed;
+	z-index:5;
+	background-color: #191919;
+	padding: 0;
+	top:0;
+}
+
+/*WKAHRES brand label up top*/
+#brand-label{
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size: 1.25rem;
+}
+
+/*email me up top on label and also used on the motto*/
+.email-me{
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size: .9rem;
+}
+
+/*formats the top container, not bootstrap standard*/
+.container-top{
+	margin-left:5.2%;
+	margin-right:5.2%;
+}
+
+/*nav background color and text size*/
+.wnav-background{
+	background: #191919;
+	border-bottom: 8rem;
+	font-size: 0.9rem;
+}
+
+/*dropdown overload for navbar*/
+.dropdown{
+	list-style:none;
+	background: #191919;
+	/*padding:10px;*/
+	display: inline-block;
+}
+.dropdown .navlink{
+	color:white;
+	text-decoration:none;
+}
+.dropdown .dropdown-menu a{
+	color: color:#FFF;
+	text-decoration:none;
+}
+.dropdown .btn:hover{
+	background-color:gray;
+	color:black;
+}
+/*dropdown*/
+
+.my-nav-border{
+	border: 1px solid line;
+	border-color: white; 
+}
+
+.navbar-toggler-position{
+	right: 15px;
+	position:  absolute;
+	color: white;
+}
+
+
+/**********************/
+/*     TITLE          */
+/**********************/
+
+/*title margins*/
+.area{
+	margin-top:2rem;
+	margin-bottom:2rem;
+}
+
+/*holds title image*/
+.img-box-top{
+	width: 100%;
+	height: 35rem;
+	margin: auto;
+	background-image: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+	display: block;
+	background-size: 60rem;
+	object-fit: cover;
+	/*background-size: contain;*/
+	background-position-x: -100px;
+	background-position-y: 70px;
+	opacity:9;
+	padding:0;
+	background-repeat:no-repeat;
+
+}
+
+/*my name on top*/
+#my-name{
+	font-size: 4.5rem;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*********About Me***********/
+#container-about-me{
+	padding-top:2rem;
+	padding-bottom:2rem;
+
+}
+
+#my-story{
+	padding-left:10rem;
+	padding-right:10rem;
+	line-height: 150%;
+	letter-spacing: .05rem;
+
+}
+
+#my-photo-box{
+	text-align: center;
+	padding-bottom:4rem;
+	max-height:200rem;
+	max-width:100%;
+}
+
+#my-photo-div{
+	width: 200px;
+  	height: 200px;
+  	border-radius: 50%;
+  	overflow: hidden;
+   	display:inline-block;
+  	vertical-align:top;
+	text-align:center;
+	margin-top:40px;
+    opacity:.9;
+    -webkit-filter: contrast(2); /* Safari 6.0 - 9.0 */
+  	filter: contrast(2);
+  	background:blue;
+}
+
+
+#my-photo-div img{
+	width:100%;
+	padding-bottom:40px;
+	margin-top:-40px;
+}
+
+/*********My Learning********/
+.my-learning-box{
+	/*background-image: url("https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+	*/
+	background: black;
+	background-image:
+	linear-gradient(
+		rgba(0,0,0,0.6),
+		rgba(0,0,0,0.6)
+	),
+	url("https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+	height:auto;
+	width:100%;
+	background-position-y: center;
+	background size: 100rem;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	padding:2rem 0 2rem 0;
+}
+
+
+/*********Carousel*********/
+
+/*this helps positioning of dots on the carousel*/
+.wbehind{
+	position:relative;
+	z-index: 1;
+}
+
+.area-carousel{
+	margin-top:6rem;
+	margin-bottom:3rem;
+	margin-left:2rem;
+	margin-right:2rem;
+	background-color: black;
+}
+
+.my-carousel-text{
+	padding-left:.2rem;
+	padding-right:.2rem;
+	line-height: 150%;
+	letter-spacing: .05rem;
+}
+
+
+#image-carousel-microsoft{
+	width: 100%;
+	height: 100%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	background-image: url("https://images.unsplash.com/photo-1589774700092-c16cc8d79851?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 50rem;
+	background-position-x: 55%;
+	background-position-y: 15%;
+	opacity:9;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#image-carousel-webdev{
+	width: 100%;
+	height: 100%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	background-image: url("https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 50rem;
+	background-position-x: 55%;
+	background-position-y: 60%;
+	opacity:9;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#image-carousel-database{
+	width: 100%;
+	height: 100%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	background-image: url("https://images.unsplash.com/photo-1533750204176-3b0d38e9ac1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 50rem;
+	background-position-x: 55%;
+	background-position-y: 60%;
+	opacity:9;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#image-carousel-gamedev{
+	width: 100%;
+	height: 100%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	background-image: url("https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 50rem;
+	background-position-x: 55%;
+	background-position-y: 60%;
+	opacity:9;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#desc-box{
+	width:100%;
+	height:33rem;
+	margin-top:10%;
+	margin-bottom:10%;
+	padding-top:5%;
+	padding-bottom:5%;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+#desc-boxa{
+	width:100%;
+	height:32rem;
+	margin-top:0%;
+	margin-bottom:0%;
+	padding-top:5%;
+	padding-bottom:5%;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+/*makes dots*/
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/****My Studying Summary*****/
+#my-studying-box{
+	width:100%;
+	height:auto;
+	/*margin-top:5%;
+	margin-bottom:5%;*/
+	padding-top:4%;
+	padding-bottom:4%;
+	margin-left:0%;
+	margin-right:0%;
+	/*padding-left:3%;
+	padding-right:3%;*/
+	display:block;
+
+
+
+}
+
+.my-study-box{
+	/*background-image: url("https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+	*/
+	background: black;
+	background-image:
+	linear-gradient(
+		rgba(0,0,0,0.8),
+		rgba(0,0,0,0.8)
+	),
+	url("https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+	height:auto;
+	width:100%;
+	background-position-y: center;
+	background-size: 100rem;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-bottom: 0rem;
+	padding:2rem 0 2rem 0;
+}
+
+.completed{
+	color: cyan;
+}
+
+
+.incomplete{
+	color: orange;
+}
+
+/*******************/
+/*Email Me Image ***/
+/*******************/
+
+#email-me-img-xl{
+	width: 100%;
+	height: 40rem;
+	background-image: url("https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 100rem;
+	object-fit: cover;
+	background-position-x:-85px; 
+	background-position-y:-290px;
+	padding:0;
+	background-repeat:no-repeat;
+	
+}
+
+#email-me-img-lg{
+	width: 100%;
+	height: 30rem;
+	background-image: url("https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 85rem;
+	object-fit: cover;
+	background-position-x:-85px; 
+	background-position-y:-290px;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#email-me-img-md{
+	width: 100%;
+	height: 22rem;
+	background-image: url("https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 70rem;
+	object-fit: cover;
+	background-position-x:-75px; 
+	background-position-y:-290px;	
+	padding:0;
+	background-repeat:no-repeat;	
+}
+
+#email-me-img-sm{
+	width: 100%;
+	height: 16rem;
+	background-image: url("https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 60rem;
+	object-fit: cover;
+	background-position-x:-100px; 
+	background-position-y:-290px;	
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+#email-me-img-xs{
+	width: 100%;
+	height: 14rem;
+	background-image: url("https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	display: block;
+	background-size: 40rem;
+	object-fit: cover;
+	background-position-x:-100px; 
+	background-position-y:-290px;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+
+
+/****alignment override *****/
+.align-left-text{
+	text-align: left;
+}
+
+.center-text{
+	text-align: center;
+}
