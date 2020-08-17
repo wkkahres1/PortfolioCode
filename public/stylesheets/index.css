@@ -314,8 +314,6 @@ div{
 
 /*********My Learning********/
 .my-learning-box{
-	/*background-image: url("https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-	*/
 	background: black;
 	background-image:
 	linear-gradient(
@@ -451,7 +449,9 @@ div{
   border-radius: 100%;
 }
 
-/****My Studying Summary*****/
+/*************************/
+/*   My Studying Summary */
+/*************************/
 #my-studying-box{
 	width:100%;
 	height:auto;
@@ -470,8 +470,6 @@ div{
 }
 
 .my-study-box{
-	/*background-image: url("https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-	*/
 	background: black;
 	background-image:
 	linear-gradient(
@@ -482,7 +480,7 @@ div{
 	height:auto;
 	width:100%;
 	background-position-y: center;
-	background-size: 100rem;
+	background-size: 150rem;
 	margin-left: 0rem;
 	margin-right: 0rem;
 	margin-bottom: 0rem;
@@ -569,8 +567,10 @@ div{
 }
 
 
+/**********************/
+/* alignment override */
+/**********************/
 
-/****alignment override *****/
 .align-left-text{
 	text-align: left;
 }
