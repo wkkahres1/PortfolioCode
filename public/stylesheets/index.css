@@ -130,7 +130,7 @@ h5{
 }
 
 .black-background{
-	background: black;
+	background: #000000;
 }
 
 .wlight-background{
@@ -156,6 +156,10 @@ div{
 	border: green 1px solid;
 }
 */
+
+.gray-text{
+	color: #191919;
+}
 
 /******************************/
 /*     LABEL AND NAV          */
